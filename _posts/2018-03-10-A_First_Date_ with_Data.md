@@ -1,5 +1,4 @@
 ---
-title: "A First Date with Data"
 date: 2018-03-10
 tags: [machine learning,data science,data preprocessing]
 header:
