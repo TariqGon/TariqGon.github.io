@@ -8,8 +8,6 @@ excerpt: " Data Science, Data Preprocessing"
 mathjax: "true"
 ---
 
-# A First Date with Data
-
 An entry point to Data Analysis can be a regression example (Next Post). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.
 
 A statistician with the name Francis Galton wanted to see if there was a connection between the height of sons and the height of their fathers. He measured the height of fathers and sons across 205 families.
