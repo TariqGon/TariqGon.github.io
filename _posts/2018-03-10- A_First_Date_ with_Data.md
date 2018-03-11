@@ -9,7 +9,7 @@ excerpt: " Data Science, Data Preprocessing, Python"
 
 An entry point to Data Analysis can be a regression example ([Next Post](/_pages/2018-03-11- A_Simple_Linear_Regression_Example.html)). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.
 
-A statistician with the name Francis Galton wanted to see if there was a connection between the height of sons and the height of their fathers. He measured the height of fathers and sons across 205 families.
+A statistician with the name Francis Galton wanted to see if there was a connection between the height of sons and the height of their fathers. He measured the height of children and their parents across 205 families.
 
 We will look closely at the data he used ( which can be found  [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T0HSJ1) ) , explore it and see what different information it contains and do some data preprocessing.
 
@@ -25,7 +25,7 @@ import pandas as pd
 import numpy as np
 ```
 
-We can read the data into a Dataframe which is a data structure with columns of potentially different types. It basically  looks like a spreadsheet or SQL table. And since we have a tab-separated data file (data separated with a tab rather than a comma in a csv(comma-separated values)), We need to specify it as follows:
+We can read the data into a Dataframe which is a data structure with columns of potentially different types. It basically  looks like a spreadsheet or SQL table. And since we have a tab-separated data file (data separated with a tab rather than a comma in a "comma-separated values"), We need to specify it as follows:
 
 
 ```python
