@@ -1,7 +1,11 @@
 ---
 title: "About"
 permalink: /about/
+header:
+  image: "/images/da.jpg"
 ---
+
+
 
 Tariq B.
 
