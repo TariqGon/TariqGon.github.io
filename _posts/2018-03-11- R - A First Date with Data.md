@@ -7,7 +7,7 @@ header:
 excerpt: " Data Science, Data Preprocessing, R"
 ---
 
-An entry point to Data Analysis can be a regression example (Next Post). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.
+An entry point to Data Analysis can be a regression example ([Next Post](/_pages/2018-03-11- A_Simple_Linear_Regression_Example.html)). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.
 
 A statistician with the name Francis Galton wanted to see if there was a connection between the height of sons and the height of their fathers. He measured the height of fathers and sons across 205 families.
 
@@ -33,8 +33,17 @@ head(df)
 
 
 <table>
-<thead><tr><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th>
-</tr>
+<thead>
+  <tr style="text-align: right;">
+    <th>family</th>
+    <th>father</th>
+    <th>mother</th>
+    <th>gender</th>
+    <th>height</th>
+    <th>kids</th>
+    <th>male</th>
+    <th>female</th>
+  </tr>
 </thead>
 <tbody>
 	<tr><td>1   </td><td>78.5</td><td>67.0</td><td>M   </td><td>73.2</td><td>4   </td><td>1   </td><td>0   </td></tr>
