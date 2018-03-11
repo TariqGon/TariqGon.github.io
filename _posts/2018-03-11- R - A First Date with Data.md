@@ -77,9 +77,6 @@ dim(df)
 # What are the available data concerning family number 7
 df[df$family == "7",]
 ```
-
-
-
 <table border="1" class="dataframe">
 <thead>
   <tr>
