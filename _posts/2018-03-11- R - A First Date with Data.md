@@ -30,7 +30,7 @@ head(df)
 ```
 
 
-<table>
+<table border="1" class="dataframe">
 <thead>
   <tr>
     <th>family</th>
@@ -80,7 +80,7 @@ df[df$family == "7",]
 
 
 
-<table>
+<table border="1" class="dataframe">
 <thead>
   <tr>
     <th>family</th>
