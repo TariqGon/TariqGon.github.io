@@ -31,18 +31,6 @@ head(df)
 
 
 <table>
-<thead>
-  <tr style="text-align: right;">
-    <td>family</td>
-    <td>father</td>
-    <td>mother</td>
-    <td>gender</td>
-    <td>height</td>
-    <td>kids</td>
-    <td>male</td>
-    <td>female</td>
-  </tr>
-</thead>
 <tbody>
 	<tr><td>1   </td><td>78.5</td><td>67.0</td><td>M   </td><td>73.2</td><td>4   </td><td>1   </td><td>0   </td></tr>
 	<tr><td>1   </td><td>78.5</td><td>67.0</td><td>F   </td><td>69.2</td><td>4   </td><td>0   </td><td>1   </td></tr>
@@ -281,10 +269,8 @@ unique(df$gender)
 ```
 
 
-<ol class=list-inline>
-	<li>M</li>
-	<li>F</li>
-</ol>
+      M
+	    F
 
 
 
@@ -308,17 +294,17 @@ setdiff(levels(nb_id), levels(fml_id))
 ```
 
 
-<ol class=list-inline>
-	<li>'13'</li>
-	<li>'50'</li>
-	<li>'84'</li>
-	<li>'111'</li>
-	<li>'120'</li>
-	<li>'161'</li>
-	<li>'189'</li>
-	<li>'202'</li>
-	<li>'205'</li>
-</ol>
+
+	'13'
+	'50'
+	'84'
+	'111'
+	'120'
+	'161'
+	'189'
+	'202'
+	'205'
+
 
 
 
