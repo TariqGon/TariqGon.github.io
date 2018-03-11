@@ -33,7 +33,9 @@ head(df)
 
 
 <table>
-<thead><tr><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
+<thead><tr><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th>
+</tr>
+</thead>
 <tbody>
 	<tr><td>1   </td><td>78.5</td><td>67.0</td><td>M   </td><td>73.2</td><td>4   </td><td>1   </td><td>0   </td></tr>
 	<tr><td>1   </td><td>78.5</td><td>67.0</td><td>F   </td><td>69.2</td><td>4   </td><td>0   </td><td>1   </td></tr>
