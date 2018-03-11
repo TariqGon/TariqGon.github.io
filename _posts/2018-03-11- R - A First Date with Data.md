@@ -1,7 +1,7 @@
 ---
 title: "R : A First Date with Data"
 date: 2018-03-11
-tags: [machine learning,data science,data preprocessing]
+tags: [machine learning,data science,data preprocessing, R]
 header:
   image: "/images/da.jpg"
 excerpt: " Data Science, Data Preprocessing, R"
@@ -32,15 +32,15 @@ head(df)
 
 <table>
 <thead>
-  <tr style="text-align: right;">
-    <th scope=col>family</th>
-    <th scope=col>father</th>
-    <th scope=col>mother</th>
-    <th scope=col>gender</th>
-    <th scope=col>height</th>
-    <th scope=col>kids</th>
-    <th scope=col>male</th>
-    <th scope=col>female</th>
+  <tr>
+    <th>family</th>
+    <th>father</th>
+    <th>mother</th>
+    <th>gender</th>
+    <th>height</th>
+    <th>kids</th>
+    <th>male</th>
+    <th>female</th>
   </tr>
 </thead>
 <tbody>
@@ -82,15 +82,15 @@ df[df$family == "7",]
 
 <table>
 <thead>
-  <tr style="text-align: right;">
-    <th scope=col>family</th>
-    <th scope=col>father</th>
-    <th scope=col>mother</th>
-    <th scope=col>gender</th>
-    <th scope=col>height</th>
-    <th scope=col>kids</th>
-    <th scope=col>male</th>
-    <th scope=col>female</th>
+  <tr>
+    <th>family</th>
+    <th>father</th>
+    <th>mother</th>
+    <th>gender</th>
+    <th>height</th>
+    <th>kids</th>
+    <th>male</th>
+    <th>female</th>
   </tr>
 </thead>
 <tbody>
