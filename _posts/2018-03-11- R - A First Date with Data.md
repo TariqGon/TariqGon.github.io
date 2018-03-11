@@ -68,10 +68,9 @@ dim(df)
 ```
 
 
-<ol class=list-inline>
-	<li>898</li>
-	<li>8</li>
-</ol>
+
+
+    (898, 8)
 
 
 
@@ -83,7 +82,18 @@ df[df$family == "7",]
 
 
 <table>
-<thead><tr><th></th><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
+<thead>
+  <tr style="text-align: right;">
+    <th>family</th>
+    <th>father</th>
+    <th>mother</th>
+    <th>gender</th>
+    <th>height</th>
+    <th>kids</th>
+    <th>male</th>
+    <th>female</th>
+  </tr>
+</thead>
 <tbody>
 	<tr><th scope=row>23</th><td>7   </td><td>74  </td><td>68  </td><td>M   </td><td>76.5</td><td>6   </td><td>1   </td><td>0   </td></tr>
 	<tr><th scope=row>24</th><td>7   </td><td>74  </td><td>68  </td><td>M   </td><td>74.0</td><td>6   </td><td>1   </td><td>0   </td></tr>
@@ -177,7 +187,18 @@ tail(df,20)
 
 
 <table>
-<thead><tr><th></th><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
+<thead>
+  <tr style="text-align: right;">
+    <th>family</th>
+    <th>father</th>
+    <th>mother</th>
+    <th>gender</th>
+    <th>height</th>
+    <th>kids</th>
+    <th>male</th>
+    <th>female</th>
+  </tr>
+</thead>
 <tbody>
 	<tr><th scope=row>879</th><td>199 </td><td>64.0</td><td>64  </td><td>F   </td><td>65.0</td><td>7   </td><td>0   </td><td>1   </td></tr>
 	<tr><th scope=row>880</th><td>199 </td><td>64.0</td><td>64  </td><td>F   </td><td>64.0</td><td>7   </td><td>0   </td><td>1   </td></tr>
@@ -289,7 +310,18 @@ df[df$family == "136",]
 
 
 <table>
-<thead><tr><th></th><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
+<thead>
+  <tr style="text-align: right;">
+    <th>family</th>
+    <th>father</th>
+    <th>mother</th>
+    <th>gender</th>
+    <th>height</th>
+    <th>kids</th>
+    <th>male</th>
+    <th>female</th>
+  </tr>
+</thead>
 <tbody>
 	<tr><th scope=row>589</th><td>136</td><td>68 </td><td>64 </td><td>M  </td><td>71 </td><td>10 </td><td>1  </td><td>0  </td></tr>
 	<tr><th scope=row>590</th><td>136</td><td>68 </td><td>64 </td><td>M  </td><td>68 </td><td>10 </td><td>1  </td><td>0  </td></tr>
@@ -313,7 +345,18 @@ df[df$family == "136A",]
 
 
 <table>
-<thead><tr><th></th><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
+<thead>
+  <tr style="text-align: right;">
+    <th>family</th>
+    <th>father</th>
+    <th>mother</th>
+    <th>gender</th>
+    <th>height</th>
+    <th>kids</th>
+    <th>male</th>
+    <th>female</th>
+  </tr>
+</thead>
 <tbody>
 	<tr><th scope=row>891</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>72.0</td><td>8   </td><td>1   </td><td>0   </td></tr>
 	<tr><th scope=row>892</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>70.5</td><td>8   </td><td>1   </td><td>0   </td></tr>
@@ -343,7 +386,18 @@ df[df$family == "205",]
 
 
 <table>
-<thead><tr><th></th><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
+<thead>
+  <tr style="text-align: right;">
+    <th>family</th>
+    <th>father</th>
+    <th>mother</th>
+    <th>gender</th>
+    <th>height</th>
+    <th>kids</th>
+    <th>male</th>
+    <th>female</th>
+  </tr>
+</thead>
 <tbody>
 	<tr><th scope=row>891</th><td>205 </td><td>68.5</td><td>65  </td><td>M   </td><td>72.0</td><td>8   </td><td>1   </td><td>0   </td></tr>
 	<tr><th scope=row>892</th><td>205 </td><td>68.5</td><td>65  </td><td>M   </td><td>70.5</td><td>8   </td><td>1   </td><td>0   </td></tr>
