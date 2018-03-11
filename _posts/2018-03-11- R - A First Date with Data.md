@@ -1,8 +1,16 @@
-
+---
+title: "R : A First Date with Data"
+date: 2018-03-11
+tags: [machine learning,data science,data preprocessing]
+header:
+  image: "/images/da.jpg"
+excerpt: " Data Science, Data Preprocessing, R"
+---
+---
 An entry point to Data Analysis can be a regression example (Next Post). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.
 
 A statistician with the name Francis Galton wanted to see if there was a connection between the height of sons and the height of their fathers. He measured the height of fathers and sons across 205 families.
- 
+
 We will look closely at the data he used ( which can be found  [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T0HSJ1) ) , explore it and see what different information it contains and do some data preprocessing.
 
 We will use R in this post, so let´s dive in :).
@@ -24,6 +32,7 @@ head(df)
 ```
 
 
+
 <table>
 <thead><tr><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
 <tbody>
@@ -40,7 +49,7 @@ head(df)
 
 We can see that there are 8 columns. For each of the adult children of one family, we have the data about their height and gender as well as their parents height and the number of siblings.
 
-Now, we will try to find more about our DataFrame by asking some basic questions: 
+Now, we will try to find more about our DataFrame by asking some basic questions:
 
 
 ```R
@@ -61,6 +70,7 @@ dim(df)
 # What are the available data concerning family number 7
 df[df$family == "7",]
 ```
+
 
 
 <table>
@@ -157,6 +167,7 @@ tail(df,20)
 ```
 
 
+
 <table>
 <thead><tr><th></th><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
 <tbody>
@@ -204,7 +215,7 @@ str(df)
      $ female: num  0 1 1 1 0 0 1 1 0 1 ...
 
 
-We notice that each of the height columns : "father", "mother", "height"(of the adult children) are numeric values. For the column: "kid" as it indicates the number of children it should be obviously an integer. 
+We notice that each of the height columns : "father", "mother", "height"(of the adult children) are numeric values. For the column: "kid" as it indicates the number of children it should be obviously an integer.
 
 Let´s look now at the remaining two culumns with the data type: "Factor".
 
@@ -269,6 +280,7 @@ df[df$family == "136",]
 ```
 
 
+
 <table>
 <thead><tr><th></th><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
 <tbody>
@@ -293,6 +305,7 @@ df[df$family == "136A",]
 ```
 
 
+
 <table>
 <thead><tr><th></th><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
 <tbody>
@@ -309,7 +322,7 @@ df[df$family == "136A",]
 
 
 
-Well, we can clearly see that there are two different families. it might be a good idea to replce the "136A" with an acual number. We can choose the number "205" since it is next on the list. 
+Well, we can clearly see that there are two different families. it might be a good idea to replce the "136A" with an acual number. We can choose the number "205" since it is next on the list.
 
 
 ```R
@@ -321,6 +334,7 @@ df$family[df$family == "136A"] <- "205"
 ```R
 df[df$family == "205",]
 ```
+
 
 
 <table>
@@ -339,7 +353,7 @@ df[df$family == "205",]
 
 
 
-Now that we are sure every value in "family" is numeric, we can convert it to be so, as follows: 
+Now that we are sure every value in "family" is numeric, we can convert it to be so, as follows:
 
 
 ```R
@@ -372,4 +386,3 @@ any(is.na(df))
 
 
 FALSE
-

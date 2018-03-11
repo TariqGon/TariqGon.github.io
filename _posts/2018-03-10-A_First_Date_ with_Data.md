@@ -1,10 +1,10 @@
 ---
-title: "A First Date with Data"
+title: "Phyton : A First Date with Data"
 date: 2018-03-10
 tags: [machine learning,data science,data preprocessing]
 header:
   image: "/images/da.jpg"
-excerpt: " Data Science, Data Preprocessing"
+excerpt: " Data Science, Data Preprocessing, Python"
 ---
 
 An entry point to Data Analysis can be a regression example (Next Post). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.
