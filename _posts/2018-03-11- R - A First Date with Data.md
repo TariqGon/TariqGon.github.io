@@ -30,29 +30,93 @@ head(df)
 ```
 
 
-<table border="1" class="dataframe">
-<thead>
-  <tr>
-    <th>family</th>
-    <th>father</th>
-    <th>mother</th>
-    <th>gender</th>
-    <th>height</th>
-    <th>kids</th>
-    <th>male</th>
-    <th>female</th>
-  </tr>
-</thead>
-<tbody>
-	<tr><td>1   </td><td>78.5</td><td>67.0</td><td>M   </td><td>73.2</td><td>4   </td><td>1   </td><td>0   </td></tr>
-	<tr><td>1   </td><td>78.5</td><td>67.0</td><td>F   </td><td>69.2</td><td>4   </td><td>0   </td><td>1   </td></tr>
-	<tr><td>1   </td><td>78.5</td><td>67.0</td><td>F   </td><td>69.0</td><td>4   </td><td>0   </td><td>1   </td></tr>
-	<tr><td>1   </td><td>78.5</td><td>67.0</td><td>F   </td><td>69.0</td><td>4   </td><td>0   </td><td>1   </td></tr>
-	<tr><td>2   </td><td>75.5</td><td>66.5</td><td>M   </td><td>73.5</td><td>4   </td><td>1   </td><td>0   </td></tr>
-	<tr><td>2   </td><td>75.5</td><td>66.5</td><td>M   </td><td>72.5</td><td>4   </td><td>1   </td><td>0   </td></tr>
-</tbody>
-</table>
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
 
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>family</th>
+      <th>father</th>
+      <th>mother</th>
+      <th>gender</th>
+      <th>height</th>
+      <th>kids</th>
+      <th>male</th>
+      <th>female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>78.5</td>
+      <td>67.0</td>
+      <td>M</td>
+      <td>73.2</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>78.5</td>
+      <td>67.0</td>
+      <td>F</td>
+      <td>69.2</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>78.5</td>
+      <td>67.0</td>
+      <td>F</td>
+      <td>69.0</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>78.5</td>
+      <td>67.0</td>
+      <td>F</td>
+      <td>69.0</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>75.5</td>
+      <td>66.5</td>
+      <td>M</td>
+      <td>73.5</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 We can see that there are 8 columns. For each of the adult children of one family, we have the data about their height and gender as well as their parents height and the number of siblings.
@@ -77,30 +141,106 @@ dim(df)
 # What are the available data concerning family number 7
 df[df$family == "7",]
 ```
+
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
-<thead>
-  <tr>
-    <th>family</th>
-    <th>father</th>
-    <th>mother</th>
-    <th>gender</th>
-    <th>height</th>
-    <th>kids</th>
-    <th>male</th>
-    <th>female</th>
-  </tr>
-</thead>
-<tbody>
-	<tr><th scope=row>23</th><td>7   </td><td>74  </td><td>68  </td><td>M   </td><td>76.5</td><td>6   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>24</th><td>7   </td><td>74  </td><td>68  </td><td>M   </td><td>74.0</td><td>6   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>25</th><td>7   </td><td>74  </td><td>68  </td><td>M   </td><td>73.0</td><td>6   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>26</th><td>7   </td><td>74  </td><td>68  </td><td>M   </td><td>73.0</td><td>6   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>27</th><td>7   </td><td>74  </td><td>68  </td><td>F   </td><td>70.5</td><td>6   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>28</th><td>7   </td><td>74  </td><td>68  </td><td>F   </td><td>64.0</td><td>6   </td><td>0   </td><td>1   </td></tr>
-</tbody>
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>family</th>
+      <th>father</th>
+      <th>mother</th>
+      <th>gender</th>
+      <th>height</th>
+      <th>kids</th>
+      <th>male</th>
+      <th>female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>22</th>
+      <td>7</td>
+      <td>74.0</td>
+      <td>68.0</td>
+      <td>M</td>
+      <td>76.5</td>
+      <td>6</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>7</td>
+      <td>74.0</td>
+      <td>68.0</td>
+      <td>M</td>
+      <td>74.0</td>
+      <td>6</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>7</td>
+      <td>74.0</td>
+      <td>68.0</td>
+      <td>M</td>
+      <td>73.0</td>
+      <td>6</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>7</td>
+      <td>74.0</td>
+      <td>68.0</td>
+      <td>M</td>
+      <td>73.0</td>
+      <td>6</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>7</td>
+      <td>74.0</td>
+      <td>68.0</td>
+      <td>F</td>
+      <td>70.5</td>
+      <td>6</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>7</td>
+      <td>74.0</td>
+      <td>68.0</td>
+      <td>F</td>
+      <td>64.0</td>
+      <td>6</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
 </table>
-
-
+</div>
 
 
 ```R
