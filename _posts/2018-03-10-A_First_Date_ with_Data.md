@@ -19,7 +19,7 @@ First of all we will import the necessary packages:
 
 
 ```python
-# Pandas is an open souce library for data manipulation and analysis
+# Pandas is an open source library for data manipulation and analysis
 # NumPy is the fundamental package for scientific computing
 import pandas as pd
 import numpy as np
