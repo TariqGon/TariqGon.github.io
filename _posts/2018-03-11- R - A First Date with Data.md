@@ -671,6 +671,7 @@ We will see if the "136A" is the same as the family number 136, to verify it was
 df[df$family == "136",]
 ```
 
+
 <div>
 <style>
     .dataframe thead tr:only-child th {
@@ -685,34 +686,134 @@ df[df$family == "136",]
         vertical-align: top;
     }
 </style>
-<table>
-<thead>
-  <tr style="text-align: right;">
-    <th>family</th>
-    <th>father</th>
-    <th>mother</th>
-    <th>gender</th>
-    <th>height</th>
-    <th>kids</th>
-    <th>male</th>
-    <th>female</th>
-  </tr>
-</thead>
-<tbody>
-	<tr><th scope=row>589</th><td>136</td><td>68 </td><td>64 </td><td>M  </td><td>71 </td><td>10 </td><td>1  </td><td>0  </td></tr>
-	<tr><th scope=row>590</th><td>136</td><td>68 </td><td>64 </td><td>M  </td><td>68 </td><td>10 </td><td>1  </td><td>0  </td></tr>
-	<tr><th scope=row>591</th><td>136</td><td>68 </td><td>64 </td><td>M  </td><td>68 </td><td>10 </td><td>1  </td><td>0  </td></tr>
-	<tr><th scope=row>592</th><td>136</td><td>68 </td><td>64 </td><td>M  </td><td>67 </td><td>10 </td><td>1  </td><td>0  </td></tr>
-	<tr><th scope=row>593</th><td>136</td><td>68 </td><td>64 </td><td>F  </td><td>65 </td><td>10 </td><td>0  </td><td>1  </td></tr>
-	<tr><th scope=row>594</th><td>136</td><td>68 </td><td>64 </td><td>F  </td><td>64 </td><td>10 </td><td>0  </td><td>1  </td></tr>
-	<tr><th scope=row>595</th><td>136</td><td>68 </td><td>64 </td><td>F  </td><td>63 </td><td>10 </td><td>0  </td><td>1  </td></tr>
-	<tr><th scope=row>596</th><td>136</td><td>68 </td><td>64 </td><td>F  </td><td>63 </td><td>10 </td><td>0  </td><td>1  </td></tr>
-	<tr><th scope=row>597</th><td>136</td><td>68 </td><td>64 </td><td>F  </td><td>62 </td><td>10 </td><td>0  </td><td>1  </td></tr>
-	<tr><th scope=row>598</th><td>136</td><td>68 </td><td>64 </td><td>F  </td><td>61 </td><td>10 </td><td>0  </td><td>1  </td></tr>
-</tbody>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>family</th>
+      <th>father</th>
+      <th>mother</th>
+      <th>gender</th>
+      <th>height</th>
+      <th>kids</th>
+      <th>male</th>
+      <th>female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>588</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>M</td>
+      <td>71.0</td>
+      <td>10</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>589</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>M</td>
+      <td>68.0</td>
+      <td>10</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>590</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>M</td>
+      <td>68.0</td>
+      <td>10</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>591</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>M</td>
+      <td>67.0</td>
+      <td>10</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>592</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>65.0</td>
+      <td>10</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>593</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>64.0</td>
+      <td>10</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>594</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>63.0</td>
+      <td>10</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>595</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>63.0</td>
+      <td>10</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>596</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>62.0</td>
+      <td>10</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>597</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>61.0</td>
+      <td>10</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
 </table>
 </div>
-
 
 
 ```R
@@ -720,31 +821,126 @@ df[df$family == "136A",]
 ```
 
 
-<table>
-<thead>
-  <tr style="text-align: right;">
-    <th>family</th>
-    <th>father</th>
-    <th>mother</th>
-    <th>gender</th>
-    <th>height</th>
-    <th>kids</th>
-    <th>male</th>
-    <th>female</th>
-  </tr>
-</thead>
-<tbody>
-	<tr><th scope=row>891</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>72.0</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>892</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>70.5</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>893</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>68.7</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>894</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>68.5</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>895</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>67.7</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>896</th><td>136A</td><td>68.5</td><td>65  </td><td>F   </td><td>64.0</td><td>8   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>897</th><td>136A</td><td>68.5</td><td>65  </td><td>F   </td><td>63.5</td><td>8   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>898</th><td>136A</td><td>68.5</td><td>65  </td><td>F   </td><td>63.0</td><td>8   </td><td>0   </td><td>1   </td></tr>
-</tbody>
-</table>
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
 
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>family</th>
+      <th>father</th>
+      <th>mother</th>
+      <th>gender</th>
+      <th>height</th>
+      <th>kids</th>
+      <th>male</th>
+      <th>female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>890</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>72.0</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>891</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>70.5</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>892</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>68.7</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>893</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>68.5</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>894</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>67.7</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>F</td>
+      <td>64.0</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>F</td>
+      <td>63.5</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>F</td>
+      <td>63.0</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 Well, we can clearly see that there are two different families. it might be a good idea to replce the "136A" with an acual number. We can choose the number "205" since it is next on the list.
@@ -761,31 +957,126 @@ df[df$family == "205",]
 ```
 
 
-<table>
-<thead>
-  <tr style="text-align: right;">
-    <th>family</th>
-    <th>father</th>
-    <th>mother</th>
-    <th>gender</th>
-    <th>height</th>
-    <th>kids</th>
-    <th>male</th>
-    <th>female</th>
-  </tr>
-</thead>
-<tbody>
-	<tr><th scope=row>891</th><td>205 </td><td>68.5</td><td>65  </td><td>M   </td><td>72.0</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>892</th><td>205 </td><td>68.5</td><td>65  </td><td>M   </td><td>70.5</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>893</th><td>205 </td><td>68.5</td><td>65  </td><td>M   </td><td>68.7</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>894</th><td>205 </td><td>68.5</td><td>65  </td><td>M   </td><td>68.5</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>895</th><td>205 </td><td>68.5</td><td>65  </td><td>M   </td><td>67.7</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>896</th><td>205 </td><td>68.5</td><td>65  </td><td>F   </td><td>64.0</td><td>8   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>897</th><td>205 </td><td>68.5</td><td>65  </td><td>F   </td><td>63.5</td><td>8   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>898</th><td>205 </td><td>68.5</td><td>65  </td><td>F   </td><td>63.0</td><td>8   </td><td>0   </td><td>1   </td></tr>
-</tbody>
-</table>
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
 
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>family</th>
+      <th>father</th>
+      <th>mother</th>
+      <th>gender</th>
+      <th>height</th>
+      <th>kids</th>
+      <th>male</th>
+      <th>female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>890</th>
+      <td>205</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>72.0</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>891</th>
+      <td>205</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>70.5</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>892</th>
+      <td>205</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>68.7</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>893</th>
+      <td>205</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>68.5</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>894</th>
+      <td>205</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>67.7</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>205</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>F</td>
+      <td>64.0</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>205</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>F</td>
+      <td>63.5</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>205</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>F</td>
+      <td>63.0</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 Now that we are sure every value in "family" is numeric, we can convert it to be so, as follows:
