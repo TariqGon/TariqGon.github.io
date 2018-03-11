@@ -33,14 +33,14 @@ head(df)
 <table>
 <thead>
   <tr style="text-align: right;">
-    <th>family</th>
-    <th>father</th>
-    <th>mother</th>
-    <th>gender</th>
-    <th>height</th>
-    <th>kids</th>
-    <th>male</th>
-    <th>female</th>
+    <td>family</td>
+    <td>father</td>
+    <td>mother</td>
+    <td>gender</td>
+    <td>height</td>
+    <td>kids</td>
+    <td>male</td>
+    <td>female</td>
   </tr>
 </thead>
 <tbody>
@@ -138,7 +138,8 @@ max(df$mother)
 ```
 
 
-70.5
+
+    70.5
 
 
 
