@@ -345,44 +345,258 @@ A part of data analysis is dealing with missing or incomplete data. We will try 
 tail(df,20)
 ```
 
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
 
-<table>
-<thead>
-  <tr style="text-align: right;">
-    <th>family</th>
-    <th>father</th>
-    <th>mother</th>
-    <th>gender</th>
-    <th>height</th>
-    <th>kids</th>
-    <th>male</th>
-    <th>female</th>
-  </tr>
-</thead>
-<tbody>
-	<tr><th scope=row>879</th><td>199 </td><td>64.0</td><td>64  </td><td>F   </td><td>65.0</td><td>7   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>880</th><td>199 </td><td>64.0</td><td>64  </td><td>F   </td><td>64.0</td><td>7   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>881</th><td>199 </td><td>64.0</td><td>64  </td><td>F   </td><td>64.0</td><td>7   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>882</th><td>199 </td><td>64.0</td><td>64  </td><td>F   </td><td>60.0</td><td>7   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>883</th><td>200 </td><td>64.0</td><td>63  </td><td>M   </td><td>64.5</td><td>1   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>884</th><td>201 </td><td>64.0</td><td>60  </td><td>M   </td><td>66.0</td><td>2   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>885</th><td>201 </td><td>64.0</td><td>60  </td><td>F   </td><td>60.0</td><td>2   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>886</th><td>203 </td><td>62.0</td><td>66  </td><td>M   </td><td>64.0</td><td>3   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>887</th><td>203 </td><td>62.0</td><td>66  </td><td>F   </td><td>62.0</td><td>3   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>888</th><td>203 </td><td>62.0</td><td>66  </td><td>F   </td><td>61.0</td><td>3   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>889</th><td>204 </td><td>62.5</td><td>63  </td><td>M   </td><td>66.5</td><td>2   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>890</th><td>204 </td><td>62.5</td><td>63  </td><td>F   </td><td>57.0</td><td>2   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>891</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>72.0</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>892</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>70.5</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>893</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>68.7</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>894</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>68.5</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>895</th><td>136A</td><td>68.5</td><td>65  </td><td>M   </td><td>67.7</td><td>8   </td><td>1   </td><td>0   </td></tr>
-	<tr><th scope=row>896</th><td>136A</td><td>68.5</td><td>65  </td><td>F   </td><td>64.0</td><td>8   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>897</th><td>136A</td><td>68.5</td><td>65  </td><td>F   </td><td>63.5</td><td>8   </td><td>0   </td><td>1   </td></tr>
-	<tr><th scope=row>898</th><td>136A</td><td>68.5</td><td>65  </td><td>F   </td><td>63.0</td><td>8   </td><td>0   </td><td>1   </td></tr>
-</tbody>
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>family</th>
+      <th>father</th>
+      <th>mother</th>
+      <th>gender</th>
+      <th>height</th>
+      <th>kids</th>
+      <th>male</th>
+      <th>female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>878</th>
+      <td>199</td>
+      <td>64.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>65.0</td>
+      <td>7</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>879</th>
+      <td>199</td>
+      <td>64.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>64.0</td>
+      <td>7</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>880</th>
+      <td>199</td>
+      <td>64.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>64.0</td>
+      <td>7</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>881</th>
+      <td>199</td>
+      <td>64.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>60.0</td>
+      <td>7</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>882</th>
+      <td>200</td>
+      <td>64.0</td>
+      <td>63.0</td>
+      <td>M</td>
+      <td>64.5</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>883</th>
+      <td>201</td>
+      <td>64.0</td>
+      <td>60.0</td>
+      <td>M</td>
+      <td>66.0</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>884</th>
+      <td>201</td>
+      <td>64.0</td>
+      <td>60.0</td>
+      <td>F</td>
+      <td>60.0</td>
+      <td>2</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>885</th>
+      <td>203</td>
+      <td>62.0</td>
+      <td>66.0</td>
+      <td>M</td>
+      <td>64.0</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>886</th>
+      <td>203</td>
+      <td>62.0</td>
+      <td>66.0</td>
+      <td>F</td>
+      <td>62.0</td>
+      <td>3</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>887</th>
+      <td>203</td>
+      <td>62.0</td>
+      <td>66.0</td>
+      <td>F</td>
+      <td>61.0</td>
+      <td>3</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>888</th>
+      <td>204</td>
+      <td>62.5</td>
+      <td>63.0</td>
+      <td>M</td>
+      <td>66.5</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>889</th>
+      <td>204</td>
+      <td>62.5</td>
+      <td>63.0</td>
+      <td>F</td>
+      <td>57.0</td>
+      <td>2</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>890</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>72.0</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>891</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>70.5</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>892</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>68.7</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>893</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>68.5</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>894</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>M</td>
+      <td>67.7</td>
+      <td>8</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>F</td>
+      <td>64.0</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>F</td>
+      <td>63.5</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>136A</td>
+      <td>68.5</td>
+      <td>65.0</td>
+      <td>F</td>
+      <td>63.0</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
 </table>
-
+</div>
 
 
 With a quick look into the family column we find that the number 202 is missing from the count and, as a bonus, there appears to be a strange value "136A" in the end of our dataframe.
@@ -457,7 +671,20 @@ We will see if the "136A" is the same as the family number 136, to verify it was
 df[df$family == "136",]
 ```
 
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
 
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table>
 <thead>
   <tr style="text-align: right;">
@@ -484,7 +711,7 @@ df[df$family == "136",]
 	<tr><th scope=row>598</th><td>136</td><td>68 </td><td>64 </td><td>F  </td><td>61 </td><td>10 </td><td>0  </td><td>1  </td></tr>
 </tbody>
 </table>
-
+</div>
 
 
 
