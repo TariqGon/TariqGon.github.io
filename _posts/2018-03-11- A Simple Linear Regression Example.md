@@ -408,7 +408,7 @@ From the previous plot, we can clearly notice a correlation between the "Yearly 
 
 ## Training and Testing the Data
 
-Now, we can move on to linear regression, but first, we should define our dependent variable Y, and then split our data into training and testing to perfom the machine learning. 
+Now, we can move on to linear regression, but first, we should define our dependent variable Y, and then split our data into training and testing to perfom the machine learning.
 
 
 ```python
@@ -418,7 +418,7 @@ Y = data['Yearly Amount Spent']
 
 
 ```python
-# X : The remaining features 
+# X : The remaining features
 X = data[['Avg. Session Length', 'Time on App','Time on Website', 'Length of Membership']]
 ```
 
@@ -468,14 +468,14 @@ plt.ylabel('Predictions')
 
 
 
-![png](lr_files/lr_26_1.png)
+![png](/images/lr_files/lr_26_1.png)
 
 
 ## Evaluating the Model
 
 The model can be evaluated using sklearn metrics, by calculating the following:
 
-MAE  : Mean Absolute Error 
+MAE  : Mean Absolute Error
 
 MSE  : Mean Squared Error
 
