@@ -6,7 +6,7 @@ header:
   image: "/images/da.jpg"
 excerpt: " Data Science, Data Preprocessing, R"
 ---
----
+
 An entry point to Data Analysis can be a regression example (Next Post). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.
 
 A statistician with the name Francis Galton wanted to see if there was a connection between the height of sons and the height of their fathers. He measured the height of fathers and sons across 205 families.
@@ -30,7 +30,6 @@ Now that we have our data in a Dataframe, we can use head() to see the first 5 r
 ```R
 head(df)
 ```
-
 
 
 <table>
@@ -70,7 +69,6 @@ dim(df)
 # What are the available data concerning family number 7
 df[df$family == "7",]
 ```
-
 
 
 <table>
@@ -165,7 +163,6 @@ A part of data analysis is dealing with missing or incomplete data. We will try 
 ```R
 tail(df,20)
 ```
-
 
 
 <table>
@@ -280,7 +277,6 @@ df[df$family == "136",]
 ```
 
 
-
 <table>
 <thead><tr><th></th><th scope=col>family</th><th scope=col>father</th><th scope=col>mother</th><th scope=col>gender</th><th scope=col>height</th><th scope=col>kids</th><th scope=col>male</th><th scope=col>female</th></tr></thead>
 <tbody>
@@ -303,7 +299,6 @@ df[df$family == "136",]
 ```R
 df[df$family == "136A",]
 ```
-
 
 
 <table>
@@ -334,7 +329,6 @@ df$family[df$family == "136A"] <- "205"
 ```R
 df[df$family == "205",]
 ```
-
 
 
 <table>
