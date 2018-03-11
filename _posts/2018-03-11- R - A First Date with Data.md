@@ -15,7 +15,7 @@ We will look closely at the data he used ( which can be found  [here](https://da
 
 We will use R in this post, so let´s dive in :).
 
-We can read the data into a Dataframe which is a data structure with columns of potentially different types. It basically  looks like a spreadsheet or SQL table. And since we have a tab-separated data file (data separated with a tab rather than a comma in a csv(comma-separated values)), We need to specify it as follows:
+We can read the data into a Dataframe which is a data structure with columns of potentially different types. It basically  looks like a spreadsheet or SQL table. And since we have a tab-separated data file (data separated with a tab rather than a comma in "comma-separated values"), We need to specify it as follows:
 
 
 ```R
