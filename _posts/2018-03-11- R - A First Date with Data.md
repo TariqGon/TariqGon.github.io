@@ -139,7 +139,9 @@ max(df$mother)
 
 
 
+
     70.5
+
 
 
 
@@ -149,7 +151,10 @@ max(df[df$female == "1","height"])
 ```
 
 
-70.5
+
+
+    70.5
+
 
 
 
@@ -159,7 +164,11 @@ mean(df$father)
 ```
 
 
-69.23285077951
+
+
+    69.23285077951
+
+
 
 
 
@@ -169,7 +178,11 @@ mean(df[df$male == "1","height"])
 ```
 
 
-69.2288172043011
+
+
+    69.2288172043011
+
+
 
 
 
@@ -179,7 +192,11 @@ length(unique(df$family))
 ```
 
 
-197
+
+
+    197
+
+
 
 
 From the study of Francis Galton we know that he gathered data across 205 families. This means that we have some missing data.
