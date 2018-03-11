@@ -60,7 +60,7 @@ head(df)
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <th>1</th>
       <td>1</td>
       <td>78.5</td>
       <td>67.0</td>
@@ -71,23 +71,12 @@ head(df)
       <td>0.0</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>78.5</td>
-      <td>67.0</td>
-      <td>F</td>
-      <td>69.2</td>
-      <td>4</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
       <th>2</th>
       <td>1</td>
       <td>78.5</td>
       <td>67.0</td>
       <td>F</td>
-      <td>69.0</td>
+      <td>69.2</td>
       <td>4</td>
       <td>0.0</td>
       <td>1.0</td>
@@ -105,6 +94,17 @@ head(df)
     </tr>
     <tr>
       <th>4</th>
+      <td>1</td>
+      <td>78.5</td>
+      <td>67.0</td>
+      <td>F</td>
+      <td>69.0</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
       <td>2</td>
       <td>75.5</td>
       <td>66.5</td>
@@ -173,7 +173,7 @@ df[df$family == "7",]
   </thead>
   <tbody>
     <tr>
-      <th>22</th>
+      <th>23</th>
       <td>7</td>
       <td>74.0</td>
       <td>68.0</td>
@@ -184,23 +184,12 @@ df[df$family == "7",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>23</th>
-      <td>7</td>
-      <td>74.0</td>
-      <td>68.0</td>
-      <td>M</td>
-      <td>74.0</td>
-      <td>6</td>
-      <td>1.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
       <th>24</th>
       <td>7</td>
       <td>74.0</td>
       <td>68.0</td>
       <td>M</td>
-      <td>73.0</td>
+      <td>74.0</td>
       <td>6</td>
       <td>1.0</td>
       <td>0.0</td>
@@ -221,6 +210,17 @@ df[df$family == "7",]
       <td>7</td>
       <td>74.0</td>
       <td>68.0</td>
+      <td>M</td>
+      <td>73.0</td>
+      <td>6</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>7</td>
+      <td>74.0</td>
+      <td>68.0</td>
       <td>F</td>
       <td>70.5</td>
       <td>6</td>
@@ -228,7 +228,7 @@ df[df$family == "7",]
       <td>1.0</td>
     </tr>
     <tr>
-      <th>27</th>
+      <th>28</th>
       <td>7</td>
       <td>74.0</td>
       <td>68.0</td>
@@ -375,23 +375,12 @@ tail(df,20)
   </thead>
   <tbody>
     <tr>
-      <th>878</th>
-      <td>199</td>
-      <td>64.0</td>
-      <td>64.0</td>
-      <td>F</td>
-      <td>65.0</td>
-      <td>7</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
       <th>879</th>
       <td>199</td>
       <td>64.0</td>
       <td>64.0</td>
       <td>F</td>
-      <td>64.0</td>
+      <td>65.0</td>
       <td>7</td>
       <td>0.0</td>
       <td>1.0</td>
@@ -413,13 +402,24 @@ tail(df,20)
       <td>64.0</td>
       <td>64.0</td>
       <td>F</td>
-      <td>60.0</td>
+      <td>64.0</td>
       <td>7</td>
       <td>0.0</td>
       <td>1.0</td>
     </tr>
     <tr>
       <th>882</th>
+      <td>199</td>
+      <td>64.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>60.0</td>
+      <td>7</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>883</th>
       <td>200</td>
       <td>64.0</td>
       <td>63.0</td>
@@ -430,7 +430,7 @@ tail(df,20)
       <td>0.0</td>
     </tr>
     <tr>
-      <th>883</th>
+      <th>884</th>
       <td>201</td>
       <td>64.0</td>
       <td>60.0</td>
@@ -441,7 +441,7 @@ tail(df,20)
       <td>0.0</td>
     </tr>
     <tr>
-      <th>884</th>
+      <th>885</th>
       <td>201</td>
       <td>64.0</td>
       <td>60.0</td>
@@ -450,23 +450,23 @@ tail(df,20)
       <td>2</td>
       <td>0.0</td>
       <td>1.0</td>
-    </tr>
-    <tr>
-      <th>885</th>
-      <td>203</td>
-      <td>62.0</td>
-      <td>66.0</td>
-      <td>M</td>
-      <td>64.0</td>
-      <td>3</td>
-      <td>1.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>886</th>
       <td>203</td>
       <td>62.0</td>
       <td>66.0</td>
+      <td>M</td>
+      <td>64.0</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>887</th>
+      <td>203</td>
+      <td>62.0</td>
+      <td>66.0</td>
       <td>F</td>
       <td>62.0</td>
       <td>3</td>
@@ -474,7 +474,7 @@ tail(df,20)
       <td>1.0</td>
     </tr>
     <tr>
-      <th>887</th>
+      <th>888</th>
       <td>203</td>
       <td>62.0</td>
       <td>66.0</td>
@@ -485,7 +485,7 @@ tail(df,20)
       <td>1.0</td>
     </tr>
     <tr>
-      <th>888</th>
+      <th>889</th>
       <td>204</td>
       <td>62.5</td>
       <td>63.0</td>
@@ -496,7 +496,7 @@ tail(df,20)
       <td>0.0</td>
     </tr>
     <tr>
-      <th>889</th>
+      <th>890</th>
       <td>204</td>
       <td>62.5</td>
       <td>63.0</td>
@@ -507,7 +507,7 @@ tail(df,20)
       <td>1.0</td>
     </tr>
     <tr>
-      <th>890</th>
+      <th>891</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -518,7 +518,7 @@ tail(df,20)
       <td>0.0</td>
     </tr>
     <tr>
-      <th>891</th>
+      <th>892</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -529,7 +529,7 @@ tail(df,20)
       <td>0.0</td>
     </tr>
     <tr>
-      <th>892</th>
+      <th>893</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -540,7 +540,7 @@ tail(df,20)
       <td>0.0</td>
     </tr>
     <tr>
-      <th>893</th>
+      <th>894</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -551,7 +551,7 @@ tail(df,20)
       <td>0.0</td>
     </tr>
     <tr>
-      <th>894</th>
+      <th>895</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -562,7 +562,7 @@ tail(df,20)
       <td>0.0</td>
     </tr>
     <tr>
-      <th>895</th>
+      <th>896</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -573,7 +573,7 @@ tail(df,20)
       <td>1.0</td>
     </tr>
     <tr>
-      <th>896</th>
+      <th>897</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -584,7 +584,7 @@ tail(df,20)
       <td>1.0</td>
     </tr>
     <tr>
-      <th>897</th>
+      <th>898</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -702,23 +702,12 @@ df[df$family == "136",]
   </thead>
   <tbody>
     <tr>
-      <th>588</th>
-      <td>136</td>
-      <td>68.0</td>
-      <td>64.0</td>
-      <td>M</td>
-      <td>71.0</td>
-      <td>10</td>
-      <td>1.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
       <th>589</th>
       <td>136</td>
       <td>68.0</td>
       <td>64.0</td>
       <td>M</td>
-      <td>68.0</td>
+      <td>71.0</td>
       <td>10</td>
       <td>1.0</td>
       <td>0.0</td>
@@ -740,13 +729,24 @@ df[df$family == "136",]
       <td>68.0</td>
       <td>64.0</td>
       <td>M</td>
-      <td>67.0</td>
+      <td>68.0</td>
       <td>10</td>
       <td>1.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>592</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>M</td>
+      <td>67.0</td>
+      <td>10</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>593</th>
       <td>136</td>
       <td>68.0</td>
       <td>64.0</td>
@@ -757,23 +757,12 @@ df[df$family == "136",]
       <td>1.0</td>
     </tr>
     <tr>
-      <th>593</th>
-      <td>136</td>
-      <td>68.0</td>
-      <td>64.0</td>
-      <td>F</td>
-      <td>64.0</td>
-      <td>10</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
       <th>594</th>
       <td>136</td>
       <td>68.0</td>
       <td>64.0</td>
       <td>F</td>
-      <td>63.0</td>
+      <td>64.0</td>
       <td>10</td>
       <td>0.0</td>
       <td>1.0</td>
@@ -795,13 +784,24 @@ df[df$family == "136",]
       <td>68.0</td>
       <td>64.0</td>
       <td>F</td>
-      <td>62.0</td>
+      <td>63.0</td>
       <td>10</td>
       <td>0.0</td>
       <td>1.0</td>
     </tr>
     <tr>
       <th>597</th>
+      <td>136</td>
+      <td>68.0</td>
+      <td>64.0</td>
+      <td>F</td>
+      <td>62.0</td>
+      <td>10</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>598</th>
       <td>136</td>
       <td>68.0</td>
       <td>64.0</td>
@@ -851,7 +851,7 @@ df[df$family == "136A",]
   </thead>
   <tbody>
     <tr>
-      <th>890</th>
+      <th>891</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -862,7 +862,7 @@ df[df$family == "136A",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>891</th>
+      <th>892</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -873,7 +873,7 @@ df[df$family == "136A",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>892</th>
+      <th>893</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -884,7 +884,7 @@ df[df$family == "136A",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>893</th>
+      <th>894</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -895,7 +895,7 @@ df[df$family == "136A",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>894</th>
+      <th>895</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -906,7 +906,7 @@ df[df$family == "136A",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>895</th>
+      <th>896</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -917,7 +917,7 @@ df[df$family == "136A",]
       <td>1.0</td>
     </tr>
     <tr>
-      <th>896</th>
+      <th>897</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -928,7 +928,7 @@ df[df$family == "136A",]
       <td>1.0</td>
     </tr>
     <tr>
-      <th>897</th>
+      <th>898</th>
       <td>136A</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -987,7 +987,7 @@ df[df$family == "205",]
   </thead>
   <tbody>
     <tr>
-      <th>890</th>
+      <th>891</th>
       <td>205</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -998,7 +998,7 @@ df[df$family == "205",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>891</th>
+      <th>892</th>
       <td>205</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -1009,7 +1009,7 @@ df[df$family == "205",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>892</th>
+      <th>893</th>
       <td>205</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -1020,7 +1020,7 @@ df[df$family == "205",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>893</th>
+      <th>894</th>
       <td>205</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -1031,7 +1031,7 @@ df[df$family == "205",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>894</th>
+      <th>895</th>
       <td>205</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -1042,7 +1042,7 @@ df[df$family == "205",]
       <td>0.0</td>
     </tr>
     <tr>
-      <th>895</th>
+      <th>896</th>
       <td>205</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -1053,7 +1053,7 @@ df[df$family == "205",]
       <td>1.0</td>
     </tr>
     <tr>
-      <th>896</th>
+      <th>897</th>
       <td>205</td>
       <td>68.5</td>
       <td>65.0</td>
@@ -1064,7 +1064,7 @@ df[df$family == "205",]
       <td>1.0</td>
     </tr>
     <tr>
-      <th>897</th>
+      <th>898</th>
       <td>205</td>
       <td>68.5</td>
       <td>65.0</td>
