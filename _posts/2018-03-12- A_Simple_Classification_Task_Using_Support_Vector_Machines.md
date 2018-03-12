@@ -6,11 +6,12 @@ header:
   image: "/images/da.jpg"
 excerpt: " Data Science, Classification, SVM, Python"
 ---
+
 One of the most famous areas of machine learning (ML) is Classification. It consists of identifying to which of a set of categories a new observation belongs. Classification has a broad array of applications, including ad targeting, medical diagnosis and image classification. An example would be detecting if an email is a "spam" or "non-spam".  
 
 Classification is considered an instance of supervised learning. A supervised task  learning where a training set of correctly identified observations is available. This consists of analyzing the training data and producing an inferred function, which can be used for mapping new examples. An optimal scenario will allow to correctly determine the class labels to which unseen instances belong.
 
-![png](/images/lsvm.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/A%20Simple%20Classification%20Task%20Using%20Support%20Vector%20Machines_files/lsvm.png">
 
 In this post, we will try to classify Iris flowers using Support Vector Machines (SVM) which is a supervised learning method to analyze data and recognize patterns. It is used for both classification and regression analysis.  
 
