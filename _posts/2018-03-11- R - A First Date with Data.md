@@ -1,7 +1,7 @@
 ---
 title: "R : A First Date with Data"
 date: 2018-03-11
-tags: [machine learning,data science,data preprocessing, R]
+tags: [Machine Learning,Data Science,Data Preprocessing, R]
 header:
   image: "/images/da.jpg"
 excerpt: " Data Science, Data Preprocessing, R"
