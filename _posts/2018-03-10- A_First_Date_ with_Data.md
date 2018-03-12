@@ -7,7 +7,7 @@ header:
 excerpt: " Data Science, Data Preprocessing, Python"
 ---
 
-An entry point to Data Analysis can be a regression example ([Next Post](/_pages/2018-03-11- A_Simple_Linear_Regression_Example.html)). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.
+An entry point to Data Analysis can be a ([Regression Example](/_pages/2018-03-11- A_Simple_Linear_Regression_Example.html)). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.
 
 A statistician with the name Francis Galton wanted to see if there was a connection between the height of sons and the height of their fathers. He measured the height of children and their parents across 205 families.
 
