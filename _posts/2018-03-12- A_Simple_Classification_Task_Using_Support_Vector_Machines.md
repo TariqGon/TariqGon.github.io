@@ -3,7 +3,7 @@ title: "Python : A Simple Classification Task Using Support Vector Machines"
 date: 2018-03-12
 tags: [Machine Learning,Data Science,Classification, SVM, Python]
 header:
-  image: "/images/da.jpg"
+  image: "/images/img.jpg"
 excerpt: " Data Science, Classification, SVM, Python"
 ---
 

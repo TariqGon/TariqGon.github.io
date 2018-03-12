@@ -3,7 +3,7 @@ title: "Phyton : A First Date with Data"
 date: 2018-03-10
 tags: [Machine Learning,Data Science,Data Preprocessing, Python]
 header:
-  image: "/images/da.jpg"
+  image: "/images/img.jpg"
 excerpt: " Data Science, Data Preprocessing, Python"
 ---
 
