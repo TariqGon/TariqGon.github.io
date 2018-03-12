@@ -1,5 +1,5 @@
 ---
-title: "R : A First Date with Data"
+title: "Python : A Simple Classification Task Using Support Vector Machines"
 date: 2018-03-12
 tags: [machine learning,data science,Classification, SVM, Python]
 header:
