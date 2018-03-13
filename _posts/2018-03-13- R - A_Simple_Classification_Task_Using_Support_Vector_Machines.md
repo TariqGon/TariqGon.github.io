@@ -79,7 +79,8 @@ any(is.na(iris))
 ```
 
 
-FALSE
+
+    FALSE
 
 
 We can see that the dataset is clear and complete, which means we can move on to the next step.
