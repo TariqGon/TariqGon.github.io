@@ -13,7 +13,7 @@ A statistician with the name Francis Galton wanted to see if there was a connect
 
 We will look closely at the data he used (which can be found  [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T0HSJ1)) , explore it and see what different information it contains and do some data preprocessing.
 
-We will use Python in this post, so let´s dive in :).
+We will use Python in this post, here is the [R version](_posts/2018-03-11- R - A First Date with Data.md). So let´s dive in :).
 
 First of all we will import the necessary packages:
 

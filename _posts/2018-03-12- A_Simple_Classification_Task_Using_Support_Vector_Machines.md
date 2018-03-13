@@ -24,7 +24,7 @@ The Iris flower dataset was introduced by Sir Ronald Fisher back in 1936. It con
 
 Four features were measured from each flower: the length and the width of the sepals and petals, in centimeters.
 
-We will use Python in this post, so let´s start :).
+We will use Python in this post,here is the [R version](_posts/2018-03-13- R - A_Simple_Classification_Task_Using_Support_Vector_Machines.md). So let´s start :).
 
 First of all, we will import the necessary packages:
 
@@ -395,7 +395,7 @@ print(classification_report(y_test,predictions))
 
 
 
-We can clearly see that the model is doing a great job in classifying the Iris flowers, especially the Setosa. For the remaining species, even thought we predicting the correct label pretty well, we will see if we can do better by doing something called "Parameter Tuning".
+We can clearly see that the model is doing a great job in classifying the Iris flowers, especially the Setosa. For the remaining species, even thought we are predicting the correct label pretty well, we will see if we can do better by performing "Parameter Tuning"
 
 ## Tuning Parameters and Model Selection
 
@@ -478,4 +478,4 @@ print(classification_report(y_test,new_predictions))
 
 ## Final Thoughts
 
-We can see that we got an improvement by tuning the hyper-parameters. However, there will always be the overlap between Versicolor and Virginica which explains the misclassification. Anyways, as mentioned earlier, we would like to keep our model capability to generalize to new data in the future, so we will not go further and will settle for this last classifier.
+We can see that we got an improvement by tuning the parameters. However, there will always be the overlap between Versicolor and Virginica which explains the misclassification. Anyways, as mentioned earlier, we would like to keep our model capability to generalize to new data in the future, so we will not go further and will settle for this last classifier.
