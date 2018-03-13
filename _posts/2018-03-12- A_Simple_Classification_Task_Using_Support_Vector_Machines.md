@@ -24,7 +24,7 @@ The Iris flower dataset was introduced by Sir Ronald Fisher back in 1936. It con
 
 Four features were measured from each flower: the length and the width of the sepals and petals, in centimeters.
 
-We will use Python in this post,here is the [R version](_posts/2018-03-13- R - A_Simple_Classification_Task_Using_Support_Vector_Machines.md). So let´s start :).
+We will use Python in this post,here is the [R version]({% post_url 2018-03-13- R - A_Simple_Classification_Task_Using_Support_Vector_Machines %}). So let´s start :).
 
 First of all, we will import the necessary packages:
 

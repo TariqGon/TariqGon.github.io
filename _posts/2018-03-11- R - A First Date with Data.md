@@ -13,7 +13,7 @@ A statistician with the name Francis Galton wanted to see if there was a connect
 
 We will look closely at the data he used (which can be found  [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T0HSJ1)) , explore it and see what different information it contains and do some data preprocessing.
 
-We will use R in this post, here is the [Python version](_posts/2018-03-10- A_First_Date_ with_Data.md). So let´s dive in :).
+We will use R in this post, here is the [Python version]({% post_url 2018-03-10- A_First_Date_ with_Data %}). So let´s dive in :).
 
 We can read the data into a Dataframe which is a data structure with columns of potentially different types. It basically  looks like a spreadsheet or SQL table. And since we have a tab-separated data file (data separated with a tab rather than a comma in "comma-separated values"), We need to specify it as follows:
 
