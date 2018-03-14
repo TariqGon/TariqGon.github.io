@@ -1,5 +1,5 @@
 ---
-title: "R : A Simple Clustering Task Using K-Means Clustering"
+title: "R : An Unsupervised Learning Task Using K-Means Clustering"
 date: 2018-03-14
 tags: [Machine Learning,Data Science,Clustering, K-Means Clustering, R]
 header:
@@ -26,7 +26,7 @@ head(data)
 
 
 <table>
-<thead><tr><th>Sepal.Length</th><th=col>Sepal.Width</th><th>Petal.Length</th><th>Petal.Width</th></tr></thead>
+<thead><tr><th>Sepal.Length</th><th>Sepal.Width</th><th>Petal.Length</th><th>Petal.Width</th></tr></thead>
 <tbody>
 	<tr><td>5.1</td><td>3.5</td><td>1.4</td><td>0.2</td></tr>
 	<tr><td>4.9</td><td>3.0</td><td>1.4</td><td>0.2</td></tr>
