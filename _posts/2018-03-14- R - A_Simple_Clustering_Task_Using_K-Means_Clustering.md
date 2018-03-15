@@ -13,7 +13,7 @@ Unsupervised learning means that there is no class (label) column which we can u
 
 We will use the K-means clustering algorithm on our Iris data assuming that we do not have the "Species" column.
 
-We will use R in this post, so let´s start :).
+We will use R in this post, here is the [Python version]({% post_url 2018-03-15- A_Simple_Clustering_Task_Using_K-Means_Clustering %}). So let´s start :).
 
 ## Preparing the data
 
@@ -64,7 +64,7 @@ any(is.na(iris))
 
 ## Exploring the Data
 
-Let´s now do some exploratory data analysis to see if we can get an idea about the data. Remember, we assume we don´t anything about how many clusters (kinds) of flowers we have from the dataset.
+Let´s now do some exploratory data analysis to see if we can get an idea about the data. Remember, we assume we don´t know anything about how many clusters (kinds) of flowers we have from the dataset.
 
 
 ```R
@@ -107,7 +107,7 @@ print(sct_pl_4 + geom_point())
 ![png](/images/KMeansClustering/output_13_0.png)
 
 
-From the previous plots, it seems that the data can be grouped into, minimum, two clusters. One cluster will definitly be easy for K-means to determine, while others might get tricky to define.
+From the previous plots, it seems that the data can be grouped into, minimum, two clusters. One cluster will definitely be easy for K-means to determine, while others might get tricky to define.
 
 The K-means clustering algorithm randomly assigns each observation to a cluster, and finds the centroid of each cluster.
 
@@ -116,9 +116,9 @@ The next process consists of iterating through two steps till the within cluster
 * Reassign data points to the cluster whose centroid is closest.
 * Calculate new centroid of each cluster.
 
-the algorithm is already loaded with R, so there is no need for an extre library.
+the algorithm is already loaded with R, so there is no need for an extra library.
 
-Since this is an unsupervised task, there is no training ot testing step, we will go on and try different clustering numbers for our data and visualize the result
+Since this is an unsupervised task, there is no training or testing step, we will go on and try different clustering numbers for our data and visualize the result
 
 ## K-Means Clustering
 
