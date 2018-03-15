@@ -20,7 +20,7 @@ We will use R in this post, so let´s start :).
 
 ```R
 library(ISLR)
-data = iris[1:4]
+data <- iris[1:4]
 head(data)
 ```
 

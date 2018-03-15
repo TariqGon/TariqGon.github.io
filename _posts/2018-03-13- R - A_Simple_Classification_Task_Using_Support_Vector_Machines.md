@@ -26,7 +26,7 @@ Four features were measured from each flower: the length and the width of the se
 
 We will use R in this post, here is the [Python version]({% post_url 2018-03-12- A_Simple_Classification_Task_Using_Support_Vector_Machines %}). So let´s start :).
 
-First of all, we will import the necessary libraries:
+First of all, we will import the necessary library:
 
 
 ```R
