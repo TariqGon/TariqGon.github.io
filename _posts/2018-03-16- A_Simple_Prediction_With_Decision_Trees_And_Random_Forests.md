@@ -7,7 +7,7 @@ header:
 excerpt: " Data Science, Decision Trees, Random Forests,Python"
 ---
 
-Decision trees are a popular tool in machine learning. They take a form a a tree with sequential questions which leads down a certain route given an answer.
+Decision trees are a popular tool in machine learning. They take a form of a tree with sequential questions which leads down a certain route given an answer.
 
 Tree models where the target variable can take a discrete values are called classification trees, whereas when target variable takes continuous values they are called regression trees.
 
