@@ -31,7 +31,7 @@ The data was collected on 83 patients undergoing corrective spinal surgery:
 
 * Start : the number of the first vertebra operated on
 
-We will use R in this post, here is the [Python version]. So let´s start :).
+We will use R in this post, here is the [Python version]({% post_url 2018-03-16- A_Simple_Prediction_With_Decision_Trees_And_Random_Forests %}). So let´s start :).
 
 ## Preparing the data
 
@@ -140,7 +140,8 @@ prp(tree_model)
 ![png](/images/DT_RF/output_19_0.png)
 
 
- ## Random Forest
+
+## Random Forests
 
 
 ```R
@@ -188,8 +189,8 @@ importance(rf_model)
 <table>
 <thead><tr><th></th><th>MeanDecreaseGini</th></tr></thead>
 <tbody>
-	<tr><th scope=row>Age</th><td> 8.497910</td></tr>
-	<tr><th scope=row>Number</th><td> 5.455633</td></tr>
-	<tr><th scope=row>Start</th><td>10.189790</td></tr>
+	<tr><th>Age</th><td> 8.497910</td></tr>
+	<tr><th>Number</th><td> 5.455633</td></tr>
+	<tr><th>Start</th><td>10.189790</td></tr>
 </tbody>
 </table>

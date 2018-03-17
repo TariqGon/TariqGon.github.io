@@ -28,7 +28,7 @@ The  [data](https://forge.scilab.org/index.php/p/rdataset/source/tree/master/csv
 
 * Start : the number of the first vertebra operated on
 
-We will use Python in this post. So let´s dive in :).
+We will use Python in this post, here is the [R version]({% post_url 2018-03-17- R - A_Simple_Prediction_With_Decision_Trees_And_Random_Forests %}). So let´s dive in :).
 
 ## Preparing the data
 
