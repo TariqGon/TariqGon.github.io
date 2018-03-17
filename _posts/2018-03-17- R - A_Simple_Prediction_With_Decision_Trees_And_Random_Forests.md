@@ -83,8 +83,8 @@ any(is.na(k_df))
 ```
 
 
-FALSE
 
+    FALSE
 
 
 ```R
