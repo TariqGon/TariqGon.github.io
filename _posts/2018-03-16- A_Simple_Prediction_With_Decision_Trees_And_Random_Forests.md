@@ -1,10 +1,10 @@
 ---
 title: "Python : A Simple Decision Tree and Random Forest Example"
 date: 2018-03-16
-tags: [Machine Learning,Data Science, Decision Trees, Random Forests, Python]
+tags: [Machine Learning, Decision Trees, Random Forests, Python]
 header:
   image: "/images/img.jpg"
-excerpt: " Data Science, Decision Trees, Random Forests,Python"
+excerpt: "Decision Trees, Random Forests,Python"
 ---
 
 Decision trees are a popular tool in machine learning. They take a form of a tree with sequential questions which leads down a certain route given an answer.

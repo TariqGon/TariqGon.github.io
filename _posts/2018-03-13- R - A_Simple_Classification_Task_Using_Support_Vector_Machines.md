@@ -1,10 +1,10 @@
 ---
 title: "R : A Simple Classification Task Using Support Vector Machines"
 date: 2018-03-13
-tags: [Machine Learning,Data Science,Classification, SVM, R]
+tags: [Machine Learning, Classification, SVM, R]
 header:
   image: "/images/img.jpg"
-excerpt: " Data Science, Classification, SVM, R"
+excerpt: "Classification, SVM, R"
 ---
 
 One of the most famous areas of machine learning (ML) is Classification. It consists of identifying to which of a set of categories a new observation belongs. Classification has a broad array of applications, including ad targeting, medical diagnosis and image classification. An example would be detecting if an email is a "spam" or "non-spam".

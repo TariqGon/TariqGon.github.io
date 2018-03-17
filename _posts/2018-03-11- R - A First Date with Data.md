@@ -1,10 +1,10 @@
 ---
 title: "R : A First Date with Data"
 date: 2018-03-11
-tags: [Machine Learning,Data Science,Data Preprocessing, R]
+tags: [Machine Learning, Data Preprocessing, R]
 header:
   image: "/images/img.jpg"
-excerpt: " Data Science, Data Preprocessing, R"
+excerpt: "Data Preprocessing, R"
 ---
 
 An entry point to Data Analysis can be a ([Regression Example](/_pages/2018-03-11- A_Simple_Linear_Regression_Example.html)). But first things first, data should be prepared before the analysis can be performed. This step is called preprocessing. Real-world (raw) data can be inconsistent or incomplete and can even contain errors. Through the following lines, we will try to walk through a simple data preprocessing task using a famous dataset.

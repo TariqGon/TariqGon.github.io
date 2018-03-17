@@ -1,10 +1,10 @@
 ---
 title: "Python : An Unsupervised Learning Task Using K-Means Clustering"
 date: 2018-03-15
-tags: [Machine Learning,Data Science,Clustering, K-Means Clustering, Python]
+tags: [Machine Learning, Clustering, K-Means Clustering, Python]
 header:
   image: "/images/img.jpg"
-excerpt: " Data Science, Clustering, K-Means Clustering, Python"
+excerpt: "Clustering, K-Means Clustering, Python"
 ---
 
 In the previous post, we performed a supervised machine learning in order to classify Iris flowers, and did pretty well in predicting the labels (kinds) of flowers. We could evaluate the performance of our model because we had the "species" column with the name of three iris kinds. Now, let´s imagine that we were not given this column and that we wanted to know if there are different kinds of Iris flower based only on the measurements of length and the width of the sepals and petals. Well, this is a called an unsupervised learning.

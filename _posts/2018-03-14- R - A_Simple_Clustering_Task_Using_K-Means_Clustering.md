@@ -1,10 +1,10 @@
 ---
 title: "R : An Unsupervised Learning Task Using K-Means Clustering"
 date: 2018-03-14
-tags: [Machine Learning,Data Science,Clustering, K-Means Clustering, R]
+tags: [Machine Learning, Clustering, K-Means Clustering, R]
 header:
   image: "/images/img.jpg"
-excerpt: " Data Science, Clustering, K-Means Clustering, R"
+excerpt: "Clustering, K-Means Clustering, R"
 ---
 
 In the previous post, we performed a supervised machine learning task in order to classify Iris flowers, and did pretty well in predicting the labels (kinds) of flowers. We could evaluate the performance of our model because we had the "Species" column with the correct label of the three Iris kinds. Now, let´s imagine that we were not given this column and we wanted to know if there are different kinds of Iris flowers based only on the measurements of length and the width of the sepals and petals. Well, this is called an unsupervised learning task.
