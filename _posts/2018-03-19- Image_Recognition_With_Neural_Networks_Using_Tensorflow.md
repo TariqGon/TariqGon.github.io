@@ -15,11 +15,11 @@ Deep learning is a subset of machine learning in AI that has networks which are 
 
 Artificial Neural Networks are inspired by the understanding of the biology of the brain with interconnections between the neurons. In the brain, any neuron can connect to any other neuron within a certain physical distance, however, artificial neural networks have discrete layers, connections, and directions of data propagation.
 
-For image recognition, an image can be chopped up into a bunch of tiles that are inputted into the first layer of the neural network. In the first layer individual neurons, then passes the data to a second layer. The second layer does its task, and so on, until the final layer and the final output is produced.
+For image recognition, an image can be chopped up into a bunch of tiles that are inputted into the first layer of the neural network.  Then passes the data to a second layer. The second layer does its task, and so on, until the final layer and the final output is produced.
 
 ![png](/images/nn/snn.jpeg)
 
-We will train neural networks using TensorFlow which is an open-source software library for numerical computation. More information on it and how to install it can be found on the [official website](https://www.tensorflow.org/).
+We will train neural networks using TensorFlow which is an open-source software library for numerical computation. More information on it and how it can be installed can be found on the [official website](https://www.tensorflow.org/).
 
 In this post we will try to classify hand written digits from the famous MNIST dataset.
 
@@ -73,7 +73,7 @@ plt.imshow(example)
 ![png](/images/nn/output_14_1.png)
 
 
-Some parameters need to be adjusted be training our neural network:
+Some parameters need to be adjusted before training our neural network:
 
 ### Learning Rate
 
@@ -120,11 +120,11 @@ The input data array is sent to the first hidden layer. Then the data will begin
 
 Then it will go on to the next hidden layer, and so on until the final output layer. We will just use two hidden layers in this example.
 
-When the data reaches the output layer it needs to be evaluated. Using a loss function (a.k.a. cost function) we can evaluate how many of the classes were correct predicted
+When the data reaches the output layer it needs to be evaluated. Using a loss function (a.k.a. cost function) we can evaluate how many of the classes were correctly predicted.
 
-Then, an optimization function is applied to minimize the cost (lower the error). This is done by adjusting weight values accordingly across the network
+Then, an optimization function is applied to minimize the cost (lower the error). This is done by adjusting weight values accordingly across the network.
 
-In this example, we will start with 2 hidden layers, which use the RELU activation function, which is a very simple rectifier function which essentially either returns x or zero. For our final output layer we will use a linear activation with matrix multiplication.
+In this example, we will use 2 hidden layers, which use the RELU activation function. It is a very simple rectifier function which essentially either returns x or zero. For our final output layer we will use a linear activation with matrix multiplication.
 
 
 ```python
@@ -174,16 +174,6 @@ md = twolayer_perceptron(x, weights, biases)
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=md,labels=y))
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 ```
-
-    WARNING:tensorflow:From <ipython-input-9-ff98194fc6d7>:2: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
-    Instructions for updating:
-
-    Future major versions of TensorFlow will allow gradients to flow
-    into the labels input on backprop by default.
-
-    See tf.nn.softmax_cross_entropy_with_logits_v2.
-
-
 
 
 ```python
@@ -332,4 +322,4 @@ print("Accuracy:", accuracy.eval({x: mnist.test.images, y: mnist.test.labels}))
 
 ## Final Thoughts
 
-We got 94% accuracy using 15 epochs. Even though this is good but running for more training epochs with this data can produce more accuracy that can get to 99%.
+We got 94% accuracy using 15 epochs. Even though this is good result. running for more training epochs with this data can produce more accuracy that can get to 99%.
