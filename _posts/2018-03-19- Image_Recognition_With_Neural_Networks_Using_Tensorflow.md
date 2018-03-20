@@ -322,4 +322,4 @@ print("Accuracy:", accuracy.eval({x: mnist.test.images, y: mnist.test.labels}))
 
 ## Final Thoughts
 
-We got 94% accuracy using 15 epochs. Even though this is good result. running for more training epochs with this data can produce more accuracy that can get to 99%.
+We got 94% accuracy using 15 epochs. Even though this is a good result, running for more training epochs with this data can produce more accuracy that can get to 99%.
